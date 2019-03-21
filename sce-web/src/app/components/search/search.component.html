@@ -1,3 +1,6 @@
-<p>
-  search works!
-</p>
+<div class="input-group mb-3 mt-3">
+    <input type="text" [(ngModel)]="term" class="form-control" placeholder="Nombre del curso o profesor" aria-label="Nombre o profesor" aria-describedby="button-addon2">
+    <div class="input-group-append">
+        <button class="btn btn-outline-primary" type="button" (click)="searchCourses(term)" id="button-addon2">Buscar</button>
+    </div>
+</div>
